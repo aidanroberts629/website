@@ -82,6 +82,7 @@ ul li.active a{
 @media screen and (max-width: 700px){
 	.headshot{
 		position: absolute;
-		down: 65%;
+		top: 15%;
+		left: 50%;
 	}
 }
