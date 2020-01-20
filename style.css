@@ -80,8 +80,12 @@ ul li.active a{
 }
 
 @media screen and (max-width: 700px){
-	width: 100%;
-	height: 100%;
+
+	header{
+		width = device-width;
+		height = device-height;
+	}
+
 	.headshot{
 		position: absolute;
 		top: 15%;
