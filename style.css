@@ -78,3 +78,9 @@ ul li.active a{
 	left: 70%;
 	transform: translate(-25%,-50%);
 }
+
+@media screen and (max-width: 700px){
+	.headshot{
+		down: 65%;
+	}
+}
