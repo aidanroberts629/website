@@ -85,7 +85,11 @@ ul li.active a{
 		position: absolute;
 		top: 30%;
 		left: 50%;
-		scale: 50%;
+		max-width: 100%;
 		transform: translate(-25%,-50%);
+	}
+	
+	.about{
+		width: auto;
 	}
 }
