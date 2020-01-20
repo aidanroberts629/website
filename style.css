@@ -81,15 +81,11 @@ ul li.active a{
 
 @media screen and (max-width: 700px){
 
-	header{
-		width = device-width;
-		height = device-height;
-	}
-
 	.headshot{
 		position: absolute;
-		top: 15%;
+		top: 30%;
 		left: 50%;
+		scale: 50%;
 		transform: translate(-25%,-50%);
 	}
 }
