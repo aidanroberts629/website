@@ -94,6 +94,6 @@ ul li.active a{
 	}
 	
 	header.aboutme{
-		max-width: auto;
+		width: auto;
 	}
 }
