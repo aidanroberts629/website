@@ -80,7 +80,10 @@ ul li.active a{
 }
 
 @media screen and (max-width: 600px){
-	
+
+	header.aboutme{
+		display: flex;
+	}
 
 	.headshot{
 		top: 30%;
