@@ -10,7 +10,7 @@ header.index{
 	background-size: cover;
 	background-position: center;
 }
-header#aboutme{
+header.aboutme{
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(aboutme/background.jpg);
 	height: 100vh;
 	background-size: cover;
@@ -81,7 +81,7 @@ ul li.active a{
 
 @media screen and (max-width: 700px){
 
-	#aboutme{
+	header.aboutme{
 		display: flex;
 	}
 
