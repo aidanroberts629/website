@@ -86,12 +86,12 @@ ul li.active a{
 	}
 
 	.headshot{
-		top: 30%;
+		top: 50%;
 		left: 50%;
 		max-width: 33%;
-		width: 180px;
+		width: 150px;
 		height: auto;
-		transform: translate(-25%,-50%);
+		transform: translate(-50%,-50%);
 	}
 
 	.about{
