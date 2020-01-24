@@ -4,22 +4,32 @@ padding: 0;
 font-family: Century Gothic;
 }
 
-header.index{
+.index{
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(media/background.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
-header.aboutme{
+.aboutme{
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(aboutme/background.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+	
 }
-ul{
-	float: right;
+nav{
+	position: fixed;
+	top:0;
+	right:0;
 	list-style-type: none;
 	margin-top: 25px;
+	width: 100%;
+}
+
+
+ul{
+	position: absolute;
+	right: 0;
 }
 
 ul li{
@@ -45,10 +55,13 @@ ul li.active a{
 }
 
 .logo img{
-	float: left;
+	position: fixed;
 	width: 75px;
 	height: auto;
-	margin-top: 25px;
+
+	top: 25px;
+	left:25px;
+	display: inline-block;
 }
 
 .main{
@@ -65,36 +78,80 @@ ul li.active a{
 
 .about{
 	position: absolute;
-	top: 50%;
-	left: 20%;
-	transform: translate(-15%,-50%);
+	/*margin: 0 0 auto;*/
 	color: white;
-	width: 600px;
+	width: 50vw;
+	display: flex;
+	flex-direction: row;
+	left: 25vw;
+	right: 25vw;
+	top: 25vh;
+	margin: auto;
 }
 
-.headshot{
-	position: absolute;
-	top: 50%;
-	left: 70%;
-	transform: translate(-25%,-50%);
+#about-desc{
+	display: flex;
+	flex-direction: column;
+	padding-right: 10%;
 }
 
-@media screen and (max-width: 650px){
+.headshot div{
+	margin: 10px;
+	padding: 10px;
+}
+
+.headshot img{
+	width: auto;
+	height: 35vh;
+}
+
+@media screen and (max-width: 1000px){
 
 	header.aboutme{
 		display: flex;
 	}
 
-	.headshot{
-		top: 50%;
-		left: 50%;
-		max-width: 33%;
-		width: 150px;
-		height: auto;
-		transform: translate(-50%,-50%);
+	.about{
+		flex-direction: column-reverse;
 	}
 
 	.about{
 		width: auto;
+		text-align: center;
+		margin-top: -10vh;
+	}
+
+	#about-desc{
+		padding: 0;
+		margin-top: 5vh;
+	}
+
+	#about-desc div{
+		margin: auto;
+		padding: 0;
+	}
+
+	p {
+		margin-bottom: 2.5vh;
+	}
+
+	.headshot img{
+		width:100%;
+		height:auto;
+	}
+
+	.logo img{
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	ul {
+		position: relative;
+		right: auto;
 	}
 }
