@@ -20,7 +20,7 @@ font-family: Century Gothic;
 nav{
 	position: fixed;
 	top:0;
-	right:0;
+	right:10vw;
 	list-style-type: none;
 	margin-top: 25px;
 	width: 100%;
@@ -60,7 +60,7 @@ ul li.active a{
 	height: auto;
 
 	top: 25px;
-	left:25px;
+	left: 10vw;
 	display: inline-block;
 }
 
@@ -92,7 +92,7 @@ ul li.active a{
 #about-desc{
 	display: flex;
 	flex-direction: column;
-	padding-right: 10%;
+	padding-right: 15%;
 }
 
 .headshot div{
@@ -105,9 +105,17 @@ ul li.active a{
 	height: 35vh;
 }
 
+p {
+		margin-bottom: 2.5vh;
+	}
+
 @media screen and (max-width: 1000px){
 
 	header.aboutme{
+		display: flex;
+	}
+	
+	header.index{
 		display: flex;
 	}
 
