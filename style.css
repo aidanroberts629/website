@@ -164,4 +164,61 @@ p {
 		position: relative;
 		right: auto;
 	}
+	
+}
+
+@media screen and (max-width: 700px) {
+    header.aboutme{
+        display: flex;
+    }
+    
+    header.index{
+        display: flex;
+        font-size: 150%;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about{
+        width: auto;
+        text-align: center;
+        margin-top: -10vh;
+    }
+
+    #about-desc{
+        padding: 0;
+        margin-top: 5vh;
+    }
+
+    #about-desc div{
+        margin: auto;
+        padding: 0;
+    }
+
+    p {
+        margin-bottom: 2.5vh;
+    }
+
+    .headshot img{
+        width:100%;
+        height:auto;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0vw;
+    }
+
+    ul {
+        position: relative;
+        right: auto;
+    }
 }
